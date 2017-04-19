@@ -5,6 +5,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="stile.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="animazione.js"></script>
 </head>
 <body>
 	<!-- Contenitore della pagina -->
@@ -12,17 +14,19 @@
 		<!-- Contenitore intestazione -->
 		<header class="intestazione">
 			<h1>Generatore casuale di citazioni</h1>
+			<p>Una citazione è la ripetizione di un'espressione che viene riportata in un testo da una persona diversa dall'autore. Una citazione può derivare da un brano letterario ben conosciuto o esplicitamente attribuito al suo autore, ma può essere altresì tratta da un discorso, da una battuta di uno spettacolo teatrale, da un film o da un brano musicale.</p>
+			<a href="https://it.wikipedia.org/wiki/Citazione"></a>
 		</header>
 		<!-- Contenitore scheda citazioni -->
 		<div class="citazioni">
 			<blockquote>
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+				<p id="citazione">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 				<cite>- Pinco Pallino -</cite>
 			</blockquote>
 		</div>
 		<!-- Contenitore posizionamento tasti -->
 		<div class="tastiera">
-			<button>Bla</button>
+			<button id="nextCit">Cambia</button>
 			<button>BliBLu</button>
 		</div>
 	</div>
