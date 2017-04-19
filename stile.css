@@ -1,0 +1,30 @@
+* {
+	box-sizing: border-box;
+}
+
+.contenitore {
+	border: 1px solid black;
+	max-width: 800px;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+}
+
+.intestazione {
+	border: 1px solid red;
+	//margin: 10px 50px 20px 50px;
+	//text-align: center;
+	flex: 1;
+}
+
+.citazioni {
+	border: 1px solid green;
+	//margin: 10px 50px 20px 50px;
+	flex: 3;
+}
+
+.tastiera {
+	border: 1px solid blue;
+	//margin: 10px 50px 20px 50px;
+	flex: 1;
+}
