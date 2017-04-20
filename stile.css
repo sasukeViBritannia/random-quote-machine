@@ -7,21 +7,26 @@
 	max-width: 1000px;
 	margin: auto;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
+}
+
+.contenitore p {
+	padding-top: 10px;
 }
 
 .intestazione {
 	border: 1px solid red;
 	text-align: center;
-	flex: 1;
+	margin: 20px;
 }
 
 .citazioni {
 	border: 1px solid green;
-	flex: 1;
+	margin: 20px;
 }
 
 .tastiera {
 	border: 1px solid blue;
-	flex: 1;
+	margin: 20px;
+	padding: 10px;
 }
