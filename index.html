@@ -1,34 +1,58 @@
 <!DOCTYPE html>
 <html lang="it-IT">
+
 <head>
-	<title>Generatore di citazioni</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="stile.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="animazione.js"></script>
+    <title>Generatore di citazioni</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stile.css">
+    <!-- Twitter widgets javascript -->
+    <script>
+    	"use strict";
+    	window.twttr = (function(d, s, id) {
+        	var js, fjs = d.getElementsByTagName(s)[0],
+            	t = window.twttr || {};
+        	if (d.getElementById(id)) return t;
+        	js = d.createElement(s);
+        	js.id = id;
+        	js.src = "https://platform.twitter.com/widgets.js";
+        	fjs.parentNode.insertBefore(js, fjs);
+
+        	t._e = [];
+        	t.ready = function(f) {
+            	t._e.push(f);
+        	};
+
+        	return t;
+    	}(document, "script", "twitter-wjs"));
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="animazione.js"></script>
 </head>
+
 <body>
-	<!-- Contenitore della pagina -->
-	<div class="contenitore">
-		<!-- Contenitore intestazione -->
-		<header class="intestazione">
-			<h1>Generatore casuale di citazioni</h1>
-			<p>Una citazione è la ripetizione di un'espressione che viene riportata in un testo da una persona diversa dall'autore. Una citazione può derivare da un brano letterario ben conosciuto o esplicitamente attribuito al suo autore, ma può essere altresì tratta da un discorso, da una battuta di uno spettacolo teatrale, da un film o da un brano musicale.</p>
-			<a href="https://it.wikipedia.org/wiki/Citazione"></a>
-		</header>
-		<!-- Contenitore scheda citazioni -->
-		<div class="citazioni">
-			<blockquote>
-				<p id="citazione">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-				<cite id="autore">- Pinco Pallino -</cite>
-			</blockquote>
-		</div>
-		<!-- Contenitore posizionamento tasti -->
-		<div class="tastiera">
-			<button id="nextCit">Cambia</button>
-			<button>BliBLu</button>
-		</div>
-	</div>
+    <!-- Contenitore della pagina -->
+    <div class="contenitore">
+        <!-- Contenitore intestazione -->
+        <header class="intestazione">
+            <h1>Generatore casuale di citazioni</h1>
+            <p>Una citazione è la ripetizione di un'espressione che viene riportata in un testo da una persona diversa dall'autore. Una citazione può derivare da un brano letterario ben conosciuto o esplicitamente attribuito al suo autore, ma può essere altresì tratta da un discorso, da una battuta di uno spettacolo teatrale, da un film o da un brano musicale.</p>
+            <a href="https://it.wikipedia.org/wiki/Citazione"></a>
+        </header>
+        <!-- Contenitore scheda citazioni -->
+        <div class="citazioni">
+            <blockquote>
+                <p id="citazione">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                <cite id="autore">- Pinco Pallino -</cite>
+            </blockquote>
+        </div>
+        <!-- Contenitore posizionamento tasti -->
+        <div class="tastiera">
+            <button id="nextCit">Cambia</button>
+            <button>BliBLu</button>
+            <a class="twitter-share-button" href="https://twitter.com/intent/tweet"></a>
+        </div>
+    </div>
 </body>
+
 </html>

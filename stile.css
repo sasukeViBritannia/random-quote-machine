@@ -1,32 +1,37 @@
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .contenitore {
-	border: 1px solid black;
-	max-width: 1000px;
-	margin: auto;
-	display: flex;
-	flex-direction: column;
+    border: 1px solid black;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .contenitore p {
-	padding-top: 10px;
+    padding-top: 10px;
 }
 
 .intestazione {
-	border: 1px solid red;
-	text-align: center;
-	margin: 20px;
+    border: 1px solid red;
+    text-align: center;
+    margin: 20px;
 }
 
 .citazioni {
-	border: 1px solid green;
-	margin: 20px;
+    border: 1px solid green;
+    margin: 20px;
 }
 
 .tastiera {
-	border: 1px solid blue;
-	margin: 20px;
-	padding: 10px;
+    border: 1px solid blue;
+    margin: 20px;
+    padding: 10px;
+}
+
+.twitter-share-button {
+	float: right;
+	margin: 0;
 }
