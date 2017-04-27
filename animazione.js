@@ -1,17 +1,35 @@
 "use strict";
 $(document).ready(function() {
 
+	//window.twttr.widgets.createShareButton('', document.getElementById("tw") ,{text: $('#citazione').text(), size: 'dafault'});
+
+/*	window.twttr.widgets.createShareButton(
+  "https:\/\/dev.twitter.com\/web\/tweet-button",
+  document.getElementById("tw"),
+  {
+    size: "large",
+    text: "custom share text",
+   // hashtags: "example,demo",
+   // via: "twitterdev",
+   // related: "twitterapi,twitter"
+  }
+);*/
+
+	var flag = 0;
+
     var arrCita = [
         ["balblblblblblblblblblblblblblblbllblblb", "alice"],
         ["cacacacacacacaacaacacacacacacacacacacac", "bob"],
         ["wfwfwfwfwfwfwwfwfwfwfwwfwfwfwfwfwfwfwfw", "carol"]
     ];
 
-    //var l = arrCita.length;
-
 
     $("#nextCit").click(function() {
 
+    	if(flag > 0){
+    		$('#tw').empty();
+    	}
+    	flag++;
         var l = arrCita.length;
         if (l === 0) {
             window.alert("Citazioni terminate!!");
@@ -24,7 +42,11 @@ $(document).ready(function() {
 
             $("#citazione").text(testo);
             $("#autore").text(autore);
+
+            window.twttr.widgets.createShareButton('', document.getElementById("tw") ,{text: $('#citazione').text(), size: 'dafault'});
+
         }
 
     });
+
 });
