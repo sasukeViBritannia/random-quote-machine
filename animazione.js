@@ -1,21 +1,21 @@
 "use strict";
 $(document).ready(function() {
 
-	//window.twttr.widgets.createShareButton('', document.getElementById("tw") ,{text: $('#citazione').text(), size: 'dafault'});
+    //window.twttr.widgets.createShareButton('', document.getElementById("tw") ,{text: $('#citazione').text(), size: 'dafault'});
 
-/*	window.twttr.widgets.createShareButton(
-  "https:\/\/dev.twitter.com\/web\/tweet-button",
-  document.getElementById("tw"),
-  {
-    size: "large",
-    text: "custom share text",
-   // hashtags: "example,demo",
-   // via: "twitterdev",
-   // related: "twitterapi,twitter"
-  }
-);*/
+    /*	window.twttr.widgets.createShareButton(
+      "https:\/\/dev.twitter.com\/web\/tweet-button",
+      document.getElementById("tw"),
+      {
+        size: "large",
+        text: "custom share text",
+       // hashtags: "example,demo",
+       // via: "twitterdev",
+       // related: "twitterapi,twitter"
+      }
+    );*/
 
-	var flag = 0;
+    var flag = 0;
 
     var arrCita = [
         ["balblblblblblblblblblblblblblblbllblblb", "alice"],
@@ -26,11 +26,12 @@ $(document).ready(function() {
 
     $("#nextCit").click(function() {
 
-    	if(flag > 0){
-    		$('#tw').empty();
-    	}
-    	flag++;
         var l = arrCita.length;
+
+        if (flag > 0 && l > 0) {
+            $('#tw').empty();
+        }
+        flag++;
         if (l === 0) {
             window.alert("Citazioni terminate!!");
         } else {
@@ -43,7 +44,7 @@ $(document).ready(function() {
             $("#citazione").text(testo);
             $("#autore").text(autore);
 
-            window.twttr.widgets.createShareButton('', document.getElementById("tw") ,{text: $('#citazione').text(), size: 'dafault'});
+            window.twttr.widgets.createShareButton('', document.getElementById("tw"), { text: $('#citazione').text(), size: 'dafault' });
 
         }
 
