@@ -1,20 +1,6 @@
 "use strict";
 $(document).ready(function() {
 
-    //window.twttr.widgets.createShareButton('', document.getElementById("tw") ,{text: $('#citazione').text(), size: 'dafault'});
-
-    /*	window.twttr.widgets.createShareButton(
-      "https:\/\/dev.twitter.com\/web\/tweet-button",
-      document.getElementById("tw"),
-      {
-        size: "large",
-        text: "custom share text",
-       // hashtags: "example,demo",
-       // via: "twitterdev",
-       // related: "twitterapi,twitter"
-      }
-    );*/
-
     var flag = 0;
 
     var arrCita = [
