@@ -1,7 +1,6 @@
 "use strict";
 $(document).ready(function() {
 
-    var flag = 0;
 
     var arrCita = [
         ["balblblblblblblblblblblblblblblbllblblb", "alice"],
@@ -14,10 +13,6 @@ $(document).ready(function() {
 
         var l = arrCita.length;
 
-        if (flag > 0 && l > 0) {
-            $('#tw').empty();
-        }
-        flag++;
         if (l === 0) {
             window.alert("Citazioni terminate!!");
         } else {
@@ -29,8 +24,9 @@ $(document).ready(function() {
 
             $("#citazione").text(testo);
             $("#autore").text(autore);
+            
+            $('#bottone').parent('a').attr('href', 'https://twitter.com/intent/tweet?text='+testo );
 
-            window.twttr.widgets.createShareButton('', document.getElementById("tw"), { text: $('#citazione').text(), size: 'dafault' });
 
         }
 
