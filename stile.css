@@ -1,3 +1,7 @@
+html, body {
+	min-width: 420px;
+}
+
 .contenitore {
     border: 1px solid black;
     max-width: 1000px;
@@ -13,7 +17,7 @@
 .intestazione {
     border: 1px solid red;
     text-align: center;
-    margin: 20px;
+    margin: 20px 20px 5px 20px;
 }
 
 .intestazione > hr {
@@ -22,13 +26,14 @@
 
 .citazioni {
     border: 1px solid green;
-    margin: 20px;
+    margin: 5px 20px 5px 20px;
     word-wrap: break-word;
+    height: 200px;
 }
 
 .tastiera {
     border: 1px solid blue;
-    margin: 20px;
+    margin: 5px 20px 20px 20px;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -52,7 +57,7 @@
     text-align: right;
 }
 
-.temp > p {
+.tastieraCol > p {
     background-color: #4099ff;
     color: white;
     border: 1px solid #4099ff;
@@ -81,4 +86,16 @@
     text-decoration: none;
     padding: 0 5px;
     width: 78px;
+}
+
+@media screen and (max-width: 600px) {
+	.intestazione p:last-child {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.intestazione p {
+		display: none;
+	}
 }
