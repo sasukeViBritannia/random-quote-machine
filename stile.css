@@ -1,14 +1,13 @@
 html, body {
 	min-width: 420px;
+	background-color: lightgrey;
 }
 
 .contenitore {
-    border: 1px solid black;
     max-width: 1000px;
     display: flex;
     flex-direction: column;
-    margin: auto;
- 
+    margin: auto;   
 }
 
 .contenitore p {
@@ -16,35 +15,54 @@ html, body {
 }
 
 .intestazione {
-    border: 1px solid red;
     text-align: center;
-    margin: 20px 20px 5px 20px;
+    margin: 5px 20px 0 20px;
+    box-shadow: 5px 5px 5px;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
+/*Barra separatrice*/
 .intestazione > hr {
     width: 95%;
+    color: #4099ff;
 }
 
 .citazioni {
-    border: 1px solid green;
-    margin: 5px 20px 5px 20px;
-    word-wrap: break-word;
-    height: 200px;
+    margin: 20px 20px 5px 20px;
+    word-wrap: break-word;	/*Spezza la parola e va a capo*/
+    min-height: 210px;
+    box-shadow: 5px 5px 5px;
+    background-color: white;
+}
+
+blockquote p:nth-child(1) {
+	display: none;
+}
+
+blockquote p:nth-child(2) {
+	font-size: 140%;
+}
+
+blockquote > cite {
+	font-size: 120%;
 }
 
 .tastiera {
-    /*border: 1px solid blue;*/
-    margin: 5px 20px 20px 20px;
+    margin: 20px 20px 0 20px;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-shadow: 5px 5px 10px;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .tastieraCol {
     flex-basis: 30%;
-    /*border: 1px solid red;*/
 }
 
 .tastieraCol:nth-child(1) {
@@ -69,6 +87,7 @@ html, body {
     text-align: center;
 }
 
+/*Pulsante per cambiare citazione*/
 #nextCit {
     width: 100%;
     height: auto;
@@ -80,6 +99,7 @@ html, body {
     cursor: pointer;
 }
 
+/*Collegamento-pulsante di condivisione su Twitter*/
 #shareTwitter {
     background-color: #4099ff;
     color: white;
@@ -90,14 +110,24 @@ html, body {
     width: 78px;
 }
 
+/*Schermo tra 500 e 600*/
 @media screen and (max-width: 600px) {
 	.intestazione p:last-child {
 		display: none;
 	}
 }
 
+/*Schermo tra 420 (minimo) e 500*/
 @media screen and (max-width: 500px) {
 	.intestazione p {
+		display: none;
+	}
+
+	blockquote p:nth-child(1) {
+		display: block;
+	}
+
+	blockquote p:nth-child(2){
 		display: none;
 	}
 }

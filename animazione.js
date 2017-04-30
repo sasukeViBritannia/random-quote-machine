@@ -10,7 +10,7 @@ $(document).ready(function() {
     ["Uccidete pure me, ma l'idea che è in me non l'ucciderete mai.", 'Giacomo Matteotti'],
     ['Rigore è quando arbitro fischia.', 'Vujadin Boskov'],
     ['Veni, vidi, vici.', 'Giulio Cesare'],
-    ['La mente p come un paracadute, funziona solo se si apre.', 'Albert Einstein'],
+    ['La mente è come un paracadute, funziona solo se si apre.', 'Albert Einstein'],
     ['La verità si ritrova sempre nella semplicità, mai nella confusione.', 'Isaac Asimov'],
     ["Dove c'è una grande volontà non possono esserci grandi difficoltà.", "Niccolò Macchiavelli"]
     ];
@@ -25,13 +25,14 @@ $(document).ready(function() {
             var indice = (Math.floor((Math.random() * 10))) % arrCita.length;	/*generazione casuale di un indice per l'array*/
             var testo = arrCita[indice][0];
             var autore = arrCita[indice][1];
-            /*window.alert("Autore = " + autore);*/
             arrCita.splice(indice, 1);	/*estrazione dell'elemento dall'array*/
 
-            $("#citazione").text(testo);
-            $("#autore").text(autore);
+            /*$("#citazione").text(testo);
+            $("#autore").text(autore);*/
+            $('.citazioni').find('p').text(testo);
+            $('.citazioni').find('cite').text(autore);
             $(this).parent().prev().find('span').text(11-l);
-            $('#shareTwitter').attr({ 'href': 'https://twitter.com/intent/tweet?text=' + testo, 'target': '_blank' });
+            $('#shareTwitter').attr({ 'href': 'https://twitter.com/intent/tweet?text=' + testo + ' ' + autore, 'target': '_blank' });
 
         }
 

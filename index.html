@@ -17,13 +17,16 @@
         <header class="intestazione">
             <h1>Generatore casuale di citazioni</h1>
             <hr>
-            <p>Una citazione è la ripetizione di un'espressione che viene riportata in un testo da una persona diversa dall'autore.</p><p>Una citazione può derivare da un brano letterario ben conosciuto o esplicitamente attribuito al suo autore, ma può essere altresì tratta da un discorso, da una battuta di uno spettacolo teatrale, da un film o da un brano musicale.</p>
+            <p><em>Una citazione è la ripetizione di un'espressione che viene riportata in un testo da una persona diversa dall'autore.</em></p>
         </header>
         <!-- Contenitore scheda citazioni -->
         <main class="citazioni">
             <blockquote>
-                <p id="citazione">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                <cite id="autore">- Pinco Pallino -</cite>
+            	<!-- Paragrafo nascosto (visibile solo con schermo piccolo)-->
+            	<p><em>Una citazione è la ripetizione di un'espressione che viene riportata in un testo da una persona diversa dall'autore.</em></p>
+            	<!-- Paragrafo visibile (nascosto su schermo piccolo)-->
+                <p>Una citazione può derivare da un brano letterario ben conosciuto o esplicitamente attribuito al suo autore, ma può essere altresì tratta da un discorso, da una battuta di uno spettacolo teatrale, da un film o da un brano musicale.</p>
+                <cite><a href="https://it.wikipedia.org/wiki/Citazione" target="_blank">Wikipedia</a></cite>
             </blockquote>
         </main>
         <!-- Contenitore posizionamento tasti -->
@@ -32,7 +35,7 @@
             	<p><span>0</span> / 10</p>
             </div>
             <div class="tastieraCol">
-                <button id="nextCit">Cambia</button>
+                <button id="nextCit">Nuova citazione</button>
             </div>
             <div class="tastieraCol">
                 <a id="shareTwitter" href="#">Condividi</a>
