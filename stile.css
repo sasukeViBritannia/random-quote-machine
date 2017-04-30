@@ -5,9 +5,10 @@ html, body {
 .contenitore {
     border: 1px solid black;
     max-width: 1000px;
-    margin: auto;
     display: flex;
     flex-direction: column;
+    margin: auto;
+ 
 }
 
 .contenitore p {
@@ -32,12 +33,13 @@ html, body {
 }
 
 .tastiera {
-    border: 1px solid blue;
+    /*border: 1px solid blue;*/
     margin: 5px 20px 20px 20px;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 5px 5px 10px;
 }
 
 .tastieraCol {
