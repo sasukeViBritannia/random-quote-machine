@@ -27,8 +27,6 @@ $(document).ready(function() {
             var autore = arrCita[indice][1];
             arrCita.splice(indice, 1);	/*estrazione dell'elemento dall'array*/
 
-            /*$("#citazione").text(testo);
-            $("#autore").text(autore);*/
             $('.citazioni').find('p').text(testo);
             $('.citazioni').find('cite').text(autore);
             $(this).parent().prev().find('span').text(11-l);
