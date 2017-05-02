@@ -1,2 +1,5 @@
 # random-quote-machine
 Challenge free-code-camp macchina per citazioni randomiche
+
+Per il progetto di fine prima parte del corso javascript di FCC https://www.freecodecamp.com/challenges/build-a-random-quote-machine, progettare una macchina che genera in modo casuale delle citazioni e consenta di condividerle su twitter.
+Il progetto è composto da un file html in cui è presente la struttura della pagina web, da un folgio di stile che si assicura di visualizzare certi elementi in base alla grandezza dello schermo oltre che consentire la responsività degli stessi. Infine un file javascript nel quale sono salvate in un array le citazioni da visualizzare, una funzione che gestisce il click sul pulsante che consente di visualizzare la citazione successiva estratta dall'array in modo casuale. E' presente anche un contatore che permette di tenere sotto controllo il numero di citazioni totali e quelle visualizzate. Infine grazie al 'tasto' citazioni è possibile condividere su twitter la citazione presente a schermo.
